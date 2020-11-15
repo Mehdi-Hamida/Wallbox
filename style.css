@@ -4,10 +4,13 @@ body
 {
     margin: 0;
     padding: 0;
-    background-color: black;
-    background-image: url(img/monochrome_abstract-197369.jpg);
-    background-size: cover;
+    background-color: #1d1e1f;
+    /* background-image: url(img/monochrome_abstract-197369.jpg);
+    background-size: cover; */
 }
+
+/* HEADER */
+
 .navbar
 {
     background-color: transparent!important;
@@ -35,30 +38,46 @@ body
     width: 100vw;
 }
 
-/* LOGO */
+/* logo */
 .navbar-brand img
 {
-    width: 70px;
-    margin-top: 1vh;
-    margin-left: 0.5vw;
+    position: absolute;
+    z-index: 1;
+    width: 50px;
+    margin-top: 0.2em;
+    margin-left: 0.8em;
 }
 
-/*.navbar-toggler
-{
-    color: #008060!important;
-}*/
-
-/* ICONE MENU EN HAUT A DROITE */
+/* Icone menu en haut à droite */
 button img
 {
     position: absolute;
-    z-index: 1000;
-    width: 5rem;
-    margin-left: -3.8em;
-    margin-top: -1.5em;
+    z-index: 1;
+    width: 3em;
+    margin-left: -3em;
+    margin-top: 0.2em;
 }
 
 button:focus
 {
     display: none;
+}
+
+/* SECTION 1 - #HOME */
+
+#home
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 96vh;
+}
+
+.skeuomorphism
+{
+    width: 80vw;
+    height: 70vh;
+    border-radius: 30px;
+background: linear-gradient(145deg, #1d1e1f, #222324);
+box-shadow:  15px 15px 30px #1d1e1f, -15px -15px 30px #232425;
 }
